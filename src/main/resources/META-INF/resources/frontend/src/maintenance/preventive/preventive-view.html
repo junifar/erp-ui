@@ -1,0 +1,17 @@
+<dom-module id="preventive-view">
+    <template>
+        <div class="view-toolbar">
+            <vaadin-text-field id="search" class="view-toolbar__search-field" autocapitalize=off>
+                <iron-icon icon="lumo:search" slot="prefix"></iron-icon>
+            </vaadin-text-field>
+        </div>
+    </template>
+    <script>
+        class PreventiveView extends Polymer.Element{
+            static get is(){
+                return 'preventive-view'
+            }
+        }
+        customElements.define(PreventiveView.is, PreventiveView)
+    </script>
+</dom-module>
